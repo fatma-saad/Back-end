@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang=''>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <title>Add Form</title>
+</head>
+<body >
+<div class="container">
+    <form id="contact" method="POST" action="PHP/attendance.php" >
+        <h3>attendance Form</h3>
+        <fieldset>
+            bin:
+            <input type="number"  name="bin" id="bin">
+        </fieldset>
+        <fieldset>
+            MONTH:
+            <input type="month"  name="month" id="month">
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" >Submit</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+<html>

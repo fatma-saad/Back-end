@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang=''>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+
+
+    <title>Add Form</title>
+</head>
+<body >
+<div class="container">
+    <form id="contact" method="POST" action="PHP/viewEmployes.php" >
+    <h3>VIEW</h3>
+        <fieldset>
+            Search by:
+            <select name="which" onchange="showfield(this.options[this.selectedIndex].value)" id="select">
+                <option value="x" >choose</option>
+                <option value="ALLL" id="ALLL">ALL</option>
+                <option value="namee" id="namee">BY Name</option>
+                <option value="emaill">BY email</option>
+                <option value="binn">BY bin</option>
+            </select>
+        </fieldset>
+        <div id="div1"></div>
+        <script type="text/javascript">
+            function showfield(name){
+                if(name=='namee')document.getElementById('div1').innerHTML='name: <input type="text" name="name"id="name" />';
+                if(name=='emaill')document.getElementById('div1').innerHTML='email: <input type="email" name="email" id="email"/>';
+                if(name=='binn')document.getElementById('div1').innerHTML='bin: <input type="number" name="bin" id="bin" />';
+                if(name=='ALLL')document.getElementById('div1').innerHTML='click submit <input type="text" name="all" value="all" id="all"/>';
+            }
+        </script>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">View</button>
+
+        </fieldset>
+    </form>
+
+</div>
+</body>
+<html>

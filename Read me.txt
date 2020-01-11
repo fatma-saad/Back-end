@@ -1,0 +1,17 @@
+This system has mysql data base have 3 tables :
+-Data base name "attendence":
+   1-first table : "admin"
+            has: name "TEXT"
+                 password "TEXT"
+    2-second table :"employee"
+         has:name "text"
+            email "text"
+            bin  "int"
+            date: "date"
+    3- third table :"employeecheck"
+           has:
+              in_time: "time"
+              out_time:"time"
+              bin:"int"
+              date:"date"    
+            
