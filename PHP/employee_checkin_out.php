@@ -72,7 +72,7 @@ function CheckType($connction)
         if ( $_POST['binn']!= NULL &&$_GET['form'] == "checkout") {
             checkoutValidation($_POST['binn'],$connction);
         }
-        if ($_GET['form'] == "checkin" && $_GET['form'] == "checkout") {
+        if ($_GET['form'] != "checkin" && $_GET['form'] != "checkout") {
             js_exit("wrong check");
         }
     }
