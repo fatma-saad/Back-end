@@ -16,9 +16,10 @@
             has: name "TEXT"<br>
                  password "TEXT"<br><br>
      2-second table :"employee"<br>
-         has:name "text"<br>
-            email "text"<br>
-            bin  "int"<br>
+         has:<br>
+            name :"text"<br>
+            email: "text"<br>
+            bin  :"int"<br>
             date: "date"<br><br>
      3- third table :"employeecheck"<br>
            has:<br>
