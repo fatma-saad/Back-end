@@ -13,8 +13,8 @@
 -u should create sqldata base in php my admin to run this system this data base should have the following:<br><br>
 -Data base name "attendence":<br>
      1-first table : "admin"<br>
-            has: name "TEXT"<br>
-                 password "TEXT"<br><br>
+            has:<br> name :"TEXT"<br>
+                 password :"TEXT"<br><br>
      2-second table :"employee"<br>
          has:<br>
             name :"text"<br>
